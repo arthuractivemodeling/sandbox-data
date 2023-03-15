@@ -1,0 +1,48 @@
+files:
+  dataset: electricity.csv
+  predictions: electricity_pred.parquet
+arthur_model:
+  partner_model_id: electricity-2023-03-03 12:09:25.105013
+  input_type: TABULAR
+  output_type: MULTICLASS
+  attributes:
+  -
+    name: date
+    stage: PIPELINE_INPUT
+    value_type: FLOAT
+  -
+    name: day
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: period
+    stage: PIPELINE_INPUT
+    value_type: FLOAT
+  -
+    name: nswprice
+    stage: PIPELINE_INPUT
+    value_type: FLOAT
+  -
+    name: nswdemand
+    stage: PIPELINE_INPUT
+    value_type: FLOAT
+  -
+    name: vicprice
+    stage: PIPELINE_INPUT
+    value_type: FLOAT
+  -
+    name: vicdemand
+    stage: PIPELINE_INPUT
+    value_type: FLOAT
+  -
+    name: transfer
+    stage: PIPELINE_INPUT
+    value_type: FLOAT
+  -
+    name: price_increase
+    stage: GROUND_TRUTH_CLASS
+    value_type: INTEGER
+  -
+    name: pred_price_increase
+    stage: PREDICTED_VALUE
+    value_type: FLOAT

@@ -1,0 +1,109 @@
+arthur_model:
+  partner_model_id: new_credit_card_default_drifty-2023-03-01 15:22:53.853598
+  input_type: TABULAR
+  output_type: MULTICLASS
+  attributes:
+  -
+    name: LIMIT_BAL
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: PAY_0
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: PAY_2
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: PAY_3
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: PAY_4
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: PAY_5
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: PAY_6
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: BILL_AMT1
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: BILL_AMT2
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: BILL_AMT3
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: BILL_AMT4
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: BILL_AMT5
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: BILL_AMT6
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: PAY_AMT1
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: PAY_AMT2
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: PAY_AMT3
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: PAY_AMT4
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: PAY_AMT5
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: PAY_AMT6
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: ID
+    stage: NON_INPUT_DATA
+    value_type: INTEGER
+  -
+    name: AGE
+    stage: NON_INPUT_DATA
+    value_type: INTEGER
+  -
+    name: SEX
+    stage: NON_INPUT_DATA
+    value_type: INTEGER
+  -
+    name: EDUCATION
+    stage: NON_INPUT_DATA
+    value_type: INTEGER
+  -
+    name: MARRIAGE
+    stage: NON_INPUT_DATA
+    value_type: INTEGER
+  -
+    name: ground_truth_credit_default
+    stage: GROUND_TRUTH_CLASS
+    value_type: INTEGER
+  -
+    name: pred_proba_credit_default
+    stage: PREDICTED_VALUE
+    value_type: FLOAT

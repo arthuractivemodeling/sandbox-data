@@ -1,0 +1,68 @@
+files:
+  dataset: boston_housing.csv
+  predictions: boston_housing_pred.parquet
+arthur_model:
+  partner_model_id: boston_housing-2023-03-03 12:12:47.797600
+  input_type: TABULAR
+  output_type: REGRESSION
+  attributes:
+  -
+    name: crim
+    stage: PIPELINE_INPUT
+    value_type: FLOAT
+  -
+    name: zn
+    stage: PIPELINE_INPUT
+    value_type: FLOAT
+  -
+    name: indus
+    stage: PIPELINE_INPUT
+    value_type: FLOAT
+  -
+    name: chas
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: nox
+    stage: PIPELINE_INPUT
+    value_type: FLOAT
+  -
+    name: rm
+    stage: PIPELINE_INPUT
+    value_type: FLOAT
+  -
+    name: age
+    stage: PIPELINE_INPUT
+    value_type: FLOAT
+  -
+    name: dis
+    stage: PIPELINE_INPUT
+    value_type: FLOAT
+  -
+    name: rad
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: tax
+    stage: PIPELINE_INPUT
+    value_type: INTEGER
+  -
+    name: ptratio
+    stage: PIPELINE_INPUT
+    value_type: FLOAT
+  -
+    name: bb
+    stage: PIPELINE_INPUT
+    value_type: FLOAT
+  -
+    name: lstat
+    stage: PIPELINE_INPUT
+    value_type: FLOAT
+  -
+    name: medv
+    stage: GROUND_TRUTH
+    value_type: FLOAT
+  -
+    name: pred_medv
+    stage: PREDICTED_VALUE
+    value_type: FLOAT
